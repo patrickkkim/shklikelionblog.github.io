@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+      <meta charset="utf-8">
+      <title>SHK's Likelion Blog</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/fcbc9afa57.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <div class="d-flex justify-content-around">
+        <div class="conatiner-sm p-5 m-5 border" style="width:1000px">
+
+          <h1 class="display-1"><strong>SHK's Likelion Blog</strong></h1>
+          <div class="d-flex mb-5 mt-4 border border-dark border-4 w-25"></div>
+          <!-- 간단한 본인소개를 carousel로 표현한 내용입니다. -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-block p-5 bg-dark text-white">
+                  <div class="m-5">
+                    <h1 class="display-1 text-warning">Hello!</h1>
+                    <h5>김승훈의 멋쟁이사자처럼 블로그 프로젝트입니다</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-block p-5 bg-dark text-white">
+                  <div class="m-5">
+                    <h1 class="display-1 text-warning">Kim Seung Hoon</h1>
+                    <h5>한국기술교육대학교 3학년</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-block p-5 bg-dark text-white">
+                  <div class="m-5">
+                    <h1 class="display-1 text-warning">좌우명</h1>
+                    <h5>한번에 되는 일은 없다!!!</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" 
+            data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" 
+            data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+          <!-- 각종 프로젝트를 간략하게 offcanvas를 이용하여 표현한 내용입니다. -->
+          <div style="margin-top:10rem; margin-bottom:10rem">
+            <h1 class="display-5">프로젝트 목록</h1>
+            <div class="d-flex mb-5 mt-4 border border-dark border-1"></div>
+            <!-- 한기대 캘린더 -->
+            <div class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas1" aria-controls="offcanvas1">
+              Project: 한기대 공유 캘린더
+            </div>
+            <div class="offcanvas offcanvas-end" horizontal-width="1000" tabindex="-1" id="offcanvas1" aria-labelledby="offcanvas1Label" style="width:1000px">
+              <div class="offcanvas-header">
+                <h1 id="offcanvas1Label">한기대 공유 캘린더</h1>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <img src="https://user-images.githubusercontent.com/28780428/105340859-c4c73d80-5c21-11eb-8686-1b5cb9f6e305.png" style="width:100%"/>
+                <div class="my-5">
+                  <h4>Django와 React를 이용해서 만든 대학교 공유 캘린더 프로젝트!</h4>
+                  <ul>
+                    <li>과제, 각종 공지사항, 대회 일정, 등등 여러가지 대학 일정들을 서로 공유할 수 있다</li>
+                    <li>좋아요 시스템을 사용해 중요한 일정은 위로! 쓸데없는 공지는 아래로!</li>
+                    <li>한눈에 이번주 일정이 뭐 있는지 확인하기 편한 메가 캘린더 메인 페이지</li>
+                    <li>아쉽게도 상용화 단계까지는 못갔다</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <br>
+            <!-- 지뢰찾기 -->
+            <button class="btn btn-outline-dark mt-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas2" aria-controls="offcanvas2">
+              Project: 지뢰찾기 RPG
+            </button>
+            <div class="offcanvas offcanvas-end" horizontal-width="1000" tabindex="-1" id="offcanvas2" aria-labelledby="offcanvas2Label" style="width:1000px">
+              <div class="offcanvas-header">
+                <h1 id="offcanvas2Label">지뢰찾기 RPG</h1>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <img src="https://user-images.githubusercontent.com/28780428/105341850-ef65c600-5c22-11eb-8399-6e0f0f0bca7f.PNG" style="width:100%"/>
+                <div class="my-5">
+                  <h4>파이썬과 QT를 이용해서 만든 지뢰찾기RPG!</h4>
+                  <ul>
+                    <li>흔히 아는 지뢰찾기와 RPG를 결합한 게임</li>
+                    <li>지뢰를 터뜨리면 게임오버 대신에 몬스터가 나온다!</li>
+                    <li>각종 장비와 무기 구현</li>
+                    <li>D&D 기반의 RPG 시스템 차용(Armor Count, To Hit, 등)!</li>
+                    <li>상용화 안됨</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <br>
+            <!-- 주식 프로그램 -->
+            <button class="btn btn-outline-dark mt-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas3" aria-controls="offcanvas3">
+              Project: 주식 차트 뷰어
+            </button>
+            <div class="offcanvas offcanvas-end" horizontal-width="1000" tabindex="-1" id="offcanvas3" aria-labelledby="offcanvas3Label" style="width:1000px">
+              <div class="offcanvas-header">
+                <h1 id="offcanvas3Label">주식 차트 뷰어</h1>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <img src="https://user-images.githubusercontent.com/28780428/114272641-e92cfc00-9a51-11eb-8bf2-ab29c3274e51.png" style="width:100%"/>
+                <div class="my-5">
+                  <h4>PYQT와 Matplotlib를 이용해서 만든 주식 차트 뷰어!</h4>
+                  <ul>
+                    <li>일, 주, 월 별로 주식을 캔들스틱 차트로 보여줌</li>
+                    <li>다양한 차트 지원(예정)</li>
+                    <li>RSI, PER, MACD 등 다양한 지표 제공(예정)</li>
+                    <li>지표와 차트를 분석해서 저평가, 고평가 된 주식을 알려주는 기능(예정)</li>
+                    <li>상용화 안됨</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex mb-5 mt-4 border border-dark border-1"></div>
+          <!-- 각종 소셜미디어 페이지를 button들을 이용하여 표현한 내용입니다.-->
+          <div class="d-flex justify-content-end">
+            <a class="btn btn-dark mx-1" type="button" href="https://github.com/patrickkkim"><i class="fab fa-github"></i> Github</a>
+            <a class="btn btn-primary mx-1" type="button" href="https://www.linkedin.com/in/patrick-kim97/"><i class="fab fa-linkedin"></i> Linkedin</a>
+            <a class="btn btn-success mx-1" type="button" href="https://imgur.com/44qECkd"><i class="fas fa-file"></i> Resume</a>
+          </div>
+
+        </div>
+      </div>
+    </body>
+</html>
