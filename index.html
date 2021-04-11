@@ -19,12 +19,13 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="d-block p-5 bg-dark text-white">
                   <div class="m-5">
-                    <h1 class="display-1 text-warning">Hello!</h1>
+                    <h1 class="display-1 text-primary">Hello!</h1>
                     <h5>김승훈의 멋쟁이사자처럼 블로그 프로젝트입니다</h5>
                   </div>
                 </div>
@@ -32,7 +33,7 @@
               <div class="carousel-item">
                 <div class="d-block p-5 bg-dark text-white">
                   <div class="m-5">
-                    <h1 class="display-1 text-warning">Kim Seung Hoon</h1>
+                    <h1 class="display-1" style="color:#fffddb">Kim Seung Hoon</h1>
                     <h5>한국기술교육대학교 3학년</h5>
                   </div>
                 </div>
@@ -40,8 +41,16 @@
               <div class="carousel-item">
                 <div class="d-block p-5 bg-dark text-white">
                   <div class="m-5">
-                    <h1 class="display-1 text-warning">좌우명</h1>
+                    <h1 class="display-1" style="color:#17a2b8">좌우명</h1>
                     <h5>한번에 되는 일은 없다!!!</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-block p-5 bg-dark text-white">
+                  <div class="m-5">
+                    <h1 class="display-1" style="color:#ffaa8c">취미</h1>
+                    <h5>유튜브 시청, 게임, 독서, 사진촬영, 등</h5>
                   </div>
                 </div>
               </div>
@@ -57,6 +66,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+
 
 
           <!-- 각종 프로젝트를 간략하게 offcanvas를 이용하여 표현한 내용입니다. -->
@@ -75,7 +85,7 @@
               <div class="offcanvas-body">
                 <img src="https://user-images.githubusercontent.com/28780428/105340859-c4c73d80-5c21-11eb-8686-1b5cb9f6e305.png" style="width:100%"/>
                 <div class="my-5">
-                  <h4>Django와 React를 이용해서 만든 대학교 공유 캘린더 프로젝트!</h4>
+                  <h4>Django와 React를 이용해서 만든 대학교 공유 캘린더 프로젝트</h4>
                   <ul>
                     <li>과제, 각종 공지사항, 대회 일정, 등등 여러가지 대학 일정들을 서로 공유할 수 있다</li>
                     <li>좋아요 시스템을 사용해 중요한 일정은 위로! 쓸데없는 공지는 아래로!</li>
@@ -98,12 +108,12 @@
               <div class="offcanvas-body">
                 <img src="https://user-images.githubusercontent.com/28780428/105341850-ef65c600-5c22-11eb-8399-6e0f0f0bca7f.PNG" style="width:100%"/>
                 <div class="my-5">
-                  <h4>파이썬과 QT를 이용해서 만든 지뢰찾기RPG!</h4>
+                  <h4>파이썬과 QT를 이용해서 만든 지뢰찾기RPG</h4>
                   <ul>
                     <li>흔히 아는 지뢰찾기와 RPG를 결합한 게임</li>
                     <li>지뢰를 터뜨리면 게임오버 대신에 몬스터가 나온다!</li>
                     <li>각종 장비와 무기 구현</li>
-                    <li>D&D 기반의 RPG 시스템 차용(Armor Count, To Hit, 등)!</li>
+                    <li>D&D 기반의 RPG 시스템 차용(Armor Count, To Hit, 등)</li>
                     <li>상용화 안됨</li>
                   </ul>
                 </div>
@@ -122,10 +132,10 @@
               <div class="offcanvas-body">
                 <img src="https://user-images.githubusercontent.com/28780428/114272641-e92cfc00-9a51-11eb-8bf2-ab29c3274e51.png" style="width:100%"/>
                 <div class="my-5">
-                  <h4>PYQT와 Matplotlib를 이용해서 만든 주식 차트 뷰어!</h4>
+                  <h4>PYQT와 Matplotlib를 이용해서 만든 주식 차트 뷰어</h4>
                   <ul>
                     <li>일, 주, 월 별로 주식을 캔들스틱 차트로 보여줌</li>
-                    <li>다양한 차트 지원(예정)</li>
+                    <li>차트 이동, 확대, 축소 등 조작 가능</li>
                     <li>RSI, PER, MACD 등 다양한 지표 제공(예정)</li>
                     <li>지표와 차트를 분석해서 저평가, 고평가 된 주식을 알려주는 기능(예정)</li>
                     <li>상용화 안됨</li>
@@ -134,6 +144,88 @@
               </div>
             </div>
           </div>
+
+
+
+          <!-- 취미로 찍은 사진 페이지들을 card를 이용하여 표현한 내용입니다. -->
+          <div style="margin-bottom:10rem">
+            <h1 class="display-5">사진전</h1>
+            <div class="d-flex mb-5 mt-4 border border-dark border-1"></div>
+            <div class="card-group my-3">
+              <div class="card" style="width: 25rem;">
+                <img src="photo/01/IMG_7248.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">01</h5>
+                  <p class="card-text"></p>
+                  <a href="photo/01/IMG_7248.JPG" class="btn btn-primary">입장</a>
+                </div>
+              </div>
+              <div class="card" style="width: 25rem;">
+                <img src="photo/01/IMG_7260.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">02</h5>
+                  <p class="card-text"></p>
+                  <a href="photo/01/IMG_7260.JPG" class="btn btn-primary">입장</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-group my-3">
+              <div class="card" style="width: 25rem;">
+                <img src="photo/01/IMG_7269.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">03</h5>
+                  <p class="card-text"></p>
+                  <a href="photo/01/IMG_7269.JPG" class="btn btn-primary">입장</a>
+                </div>
+              </div>
+              <div class="card" style="width: 25rem;">
+                <img src="photo/01/IMG_7310.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">04</h5>
+                  <p class="card-text"></p>
+                  <a href="photo/01/IMG_7310.JPG" class="btn btn-primary">입장</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-group my-3">
+              <div class="card" style="width: 25rem;">
+                <img src="photo/01/IMG_7322.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">05</h5>
+                  <p class="card-text"></p>
+                  <a href="photo/01/IMG_7322.JPG" class="btn btn-primary">입장</a>
+                </div>
+              </div>
+              <div class="card" style="width: 25rem;">
+                <img src="photo/01/IMG_7397.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">06</h5>
+                  <p class="card-text"></p>
+                  <a href="photo/01/IMG_7397.JPG" class="btn btn-primary">입장</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-group my-3">
+              <div class="card" style="width: 25rem;">
+                <img src="photo/01/IMG_7403.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">07</h5>
+                  <p class="card-text"></p>
+                  <a href="photo/01/IMG_7403.JPG" class="btn btn-primary">입장</a>
+                </div>
+              </div>
+              <div class="card" style="width: 25rem;">
+                <img src="photo/01/IMG_7585.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">08</h5>
+                  <p class="card-text"></p>
+                  <a href="photo/01/IMG_7585.JPG" class="btn btn-primary">입장</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
 
           <div class="d-flex mb-5 mt-4 border border-dark border-1"></div>
           <!-- 각종 소셜미디어 페이지를 button들을 이용하여 표현한 내용입니다.-->
