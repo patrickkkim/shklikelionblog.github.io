@@ -1,0 +1,91 @@
+
+body {
+    background-color: #e7eeed;
+}
+
+.body {
+    overflow: hidden;
+}
+
+.card-body {
+    background-color: #e7eeed;
+}
+
+#titlebox, #introbox, #projects {
+    position: relative;
+}
+
+#titlebox:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #f86449;
+    width: 200rem;
+    height: 150rem;
+    top: -30rem;
+    left: -30rem;
+    z-index: -5;
+}
+
+.tilt-intro {
+    position: absolute;
+    background-color: #f97057;
+    width: 200rem;
+    height: 140rem;
+    top: 100rem;
+    left: -30rem;
+    z-index: -4;
+}
+
+.tilt-projects {
+    position: absolute;
+    background-color: #f97e67;
+    width: 200rem;
+    height: 140rem;
+    top: 100rem;
+    left: -30rem;
+    z-index: -3;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    text-underline-position: under;
+}
+
+.fast-text-project, .fast-text-intro {
+    opacity: 0;
+}
+
+.up-button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    box-shadow: 5px 5px 2px black;
+}
+
+.helvetica {
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.helvetica-xl {
+    font-size: 8rem;
+}
+
+.helvetica-lg {
+    font-size: 5rem;
+}
+
+.helvetica-md {
+    font-size: 3rem;
+}
+
+.helvetica-sm {
+    font-size: 2rem;
+}
+
+.helvetica-xs {
+    font-size: 1rem;
+}
