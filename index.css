@@ -1,6 +1,7 @@
 
 body {
     background-color: #e7eeed;
+    overflow-X: hidden;
 }
 
 .body {
@@ -11,7 +12,7 @@ body {
     background-color: #e7eeed;
 }
 
-#titlebox, #introbox, #projects {
+#titlebox, #introbox, #projects, #photos {
     position: relative;
 }
 
@@ -21,15 +22,15 @@ body {
     position: absolute;
     background-color: #f86449;
     width: 200rem;
-    height: 150rem;
-    top: -30rem;
+    height: 200rem;
+    top: -50rem;
     left: -30rem;
     z-index: -5;
 }
 
 .tilt-intro {
     position: absolute;
-    background-color: #f97057;
+    background-color: #f8bc49 ;
     width: 200rem;
     height: 140rem;
     top: 100rem;
@@ -39,12 +40,22 @@ body {
 
 .tilt-projects {
     position: absolute;
-    background-color: #f97e67;
+    background-color: #ddf849 ;
     width: 200rem;
     height: 140rem;
     top: 100rem;
     left: -30rem;
     z-index: -3;
+}
+
+.tilt-photos {
+    position: absolute;
+    background-color: #86F849;
+    width: 200rem;
+    height: 140rem;
+    top: 100rem;
+    left: -30rem;
+    z-index: -2;
 }
 
 .nav-link:hover {
@@ -53,7 +64,7 @@ body {
     text-underline-position: under;
 }
 
-.fast-text-project, .fast-text-intro {
+.fast-text-project, .fast-text-intro, .fast-text-photo {
     opacity: 0;
 }
 

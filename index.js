@@ -2,9 +2,6 @@ import anime from '/node_modules/animejs/lib/anime.es.js';
 import './node_modules/waypoints/lib/noframework.waypoints.min.js';
 
 
-
-
-
 // ANIME js
 // Anchor to section animations
 const button = document.querySelector('.up-button');
@@ -17,6 +14,7 @@ button.addEventListener('click', () => {
     });
 });
 
+// Anchor all links in navbar
 const links = document.querySelectorAll('.nav-link').forEach((link) => {
     const href = link.getAttribute("href");
     const top = document.querySelector(href).getBoundingClientRect().top;
@@ -30,7 +28,24 @@ const links = document.querySelectorAll('.nav-link').forEach((link) => {
             easing: 'easeInOutExpo'
         })
     })
+});
+
+// Animate hover for footer buttons
+/*
+const footerBtns = document.querySelectorAll('.footer-btn').forEach((btn) => {
+    btn.addEventListener('mouseenter', (e) => {
+        e.preventDefault();
+        anime({
+            easing: 'easeInOutExp',
+            target: btn,
+            borderWidth: ['0px', '10px'],
+            borderStyle: 'dotted',
+            borderColor: 'black',
+            duration: 100,
+        })
+    })
 })
+*/
 
 // Wrap every text to span
 var textWrapper = document.querySelectorAll(".slow-text-appearance");
@@ -69,8 +84,6 @@ var slowTL = anime.timeline({
 
 
 
-
-
 // WAYPOINT js
 // Intro section waypoint
 var introActivated = false;
@@ -81,17 +94,19 @@ var intro = new Waypoint({
             introActivated = true;
             anime.timeline({
                 easing: 'easeInOutExpo',
-            }).add({
+            })
+            .add({
                 targets: '.tilt-intro',
                 translateY: '-120rem',
                 skewY: '-7deg',
-                duration: 300
-            }, '-=100').add({
+                duration: 1000
+            }, '-=500')
+            .add({
                 targets: '.fast-text-intro',
                 opacity: 1,
                 translateY: '-1rem',
                 duration: 300,
-            },'-=100');
+            },'-=300');
             
             anime.timeline({
                 easing: 'easeInElastic(1, .5)',
@@ -122,18 +137,20 @@ var projects = new Waypoint({
             projectsActivated = true;
             anime.timeline({
                 easing: 'easeInOutExpo'
-            }).add({
+            })
+            .add({
                 targets: '.tilt-projects',
                 translateY: '-110rem',
                 skewY: '7deg',
-                duration: 300
-            }, '-=100').add({
+                duration: 1000
+            }, '-=500')
+            .add({
                 targets: '.fast-text-project',
                 opacity: 1,
                 translateY: '-1rem',
                 duration: 300,
                 delay: 0,
-            }, '-=100');
+            }, '-=300');
 
             anime.timeline({
                 easing: 'easeInElastic(1, .5)',
@@ -147,5 +164,32 @@ var projects = new Waypoint({
                 endDelay: 900,
             })
         }
-    }, offset: '110%'
+    }, offset: '100%'
 });
+
+// Photo section waypoint
+var photosActivated = false;
+var photos = new Waypoint({
+    element: document.getElementById('photos'),
+    handler: function(direction) {
+        if (direction == 'down' && !photosActivated) {
+            photosActivated = true;
+            anime.timeline({
+                easing: 'easeInOutExpo'
+            })
+            .add({
+                targets: '.tilt-photos',
+                translateY: '-130rem',
+                borderRadius: '50%',
+                duration: 1000
+            }, '-=500')
+            .add({
+                targets: '.fast-text-photo',
+                opacity: 1,
+                translateY: '-1rem',
+                duration: 1500,
+                delay: 0,
+            }, '-=300');
+        }
+    }, offset: '100%'
+})
