@@ -30,7 +30,7 @@ const links = document.querySelectorAll('.nav-link').forEach((link) => {
     })
 });
 
-// Animate hover for footer buttons
+// Animate hover for footer buttons?
 /*
 const footerBtns = document.querySelectorAll('.footer-btn').forEach((btn) => {
     btn.addEventListener('mouseenter', (e) => {
