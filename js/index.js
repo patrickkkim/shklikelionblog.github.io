@@ -1,5 +1,5 @@
-import anime from '../node_modules/animejs/lib/anime.es.js';
-import '../node_modules/waypoints/lib/noframework.waypoints.min.js';
+import anime from 'node_modules/animejs/lib/anime.es.js';
+import 'node_modules/waypoints/lib/noframework.waypoints.min.js';
 
 
 // ANIME js
